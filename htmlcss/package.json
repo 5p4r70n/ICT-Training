@@ -1,0 +1,11 @@
+{
+  "name": "htmlcss",
+  "version": "1.0.0",
+  "description": "my 1st html and css prg",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jothish",
+  "license": "ISC"
+}
