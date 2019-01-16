@@ -1,0 +1,18 @@
+.indexbody {
+    background-color: aqua;
+}
+.indextable {
+    background-color: rgb(28, 29, 99);
+    border:2px solid black;
+}
+.mybutton {
+    background-color: crimson
+}
+
+.regbody {
+    background-color: chocolate
+}
+.regtable{
+    background-color: cornsilk;
+    border: 2px solid black
+}
