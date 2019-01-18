@@ -6,6 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>this is mine</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script>
+        function test()
+    {
+        var getname= document.getElementById('name').value;
+        var getroll= document.getElementById('rollno').value;
+        var getclass= document.getElementById('myclass').value;
+        console.log(getname);
+        console.log(getroll);
+        console.log(getclass);
+        document.getElementById('opt').innerHTML="Operation Success";
+        document.getElementById('name1').innerHTML=getname;
+        document.getElementById('roll1').innerHTML=getroll;
+        document.getElementById('class1').innerHTML=getclass;
+               alert("clicked");
+    }
+    </script>
 </head>
 <body class="indexbody">
 
@@ -44,37 +60,47 @@
     <h6>----------im j07h15h</h6> -->
     im a full stack developer :D
 
-    <table class="table">
-        <tr>
-            <td>Name</td>
-            <td><input type="text"/></td>
-        </tr>
-        <tr>
-            <td>Roll No</td>
-            <td><input type="text"/></td>
-        </tr>
-        <tr>
-            <td>class</td>
-            <td>
-                <select>
-                    <option value="LKG">LKG</option>
-                    <option value="UKG">UKG</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td><button class="btn btn-primary">Submit</button></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>
-                <a href="./register.html" >Go....</a>
-            </td>
-        </tr>
-    </table>
+    <form>
+        <table class="table">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="name"/></td>
+            </tr>
+            <tr>
+                <td>Roll No</td>
+                <td><input type="text" id="rollno" pattern="[6789]{1}[0-9]{9}" required/></td>
+            </tr>
+            <tr>
+                <td>class</td>
+                <td>
+                    <select id="myclass">
+                        <option value="LKG">LKG</option>
+                        <option value="UKG">UKG</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit" class="btn btn-primary" onclick="test();">Submit</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <a href="./register.html" >Go....</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="opt"></p> <br>
+                    <p id="name1"></p> <br>
+                    <p id="roll1"></p> <br>
+                    <p id="class1"></p>
+                </td>
+            </tr>
+        </table>
+    </form>
 
 
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi labore, earum maiores ipsa debitis quaerat, culpa recusandae totam aspernatur voluptates eaque sit itaque cupiditate explicabo cumque, dolor harum hic est?</p>
 </body>
-</html>
+</html> 
