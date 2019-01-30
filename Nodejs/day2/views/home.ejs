@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <th>
+        <tr>
+            <td>Book Id</td>
+            <td>Book name</td>
+            <td>Auther</td>
+            <td>Price</td>
+        </tr>
+    </th>
+        <% for(var i=0;i<data.length;i++)
+        {%>
+           <tr>
+               <td>
+                   <%= data[i].bid %>
+               </td>
+               <td>
+                    <%= data[i].bname %>
+                </td>
+                <td>
+                        <%= data[i].author %>
+                    </td>
+                    <td>
+                     <%= data[i].price %>
+         </td>
+         <td>
+            <button type="submit">add to cart</button>
+         </td>
+           </tr> 
+       <% } %>
+    </table>
+</body>
+</html>
