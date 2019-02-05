@@ -2,7 +2,7 @@ var express = require("express")
 var bodyparser = require("body-parser")
 const app = express()
 var gh=require("./exportfn")
-app.use(bodyparser.urlencoded({extended:true}))
+r04:27 PM 31/01/2019e
 app.set("view engine","ejs")
 var books=[{bid:"books",bname:"nodejs",author:"google",price:3000},{bid:"books1",bname:"nodejs1",author:"google1",price:4000},{bid:"books2",bname:"nodejs2",author:"google2",price:2000}]
 app.get("/",function(req,res)

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delete</title>
+</head>
+<body>
+    <center><h1><b>Delete Employee</b></h1></center>
+    <table>
+            <form method="POST" action="/empdel">
+        <tr>
+            <td><select name="empname">
+                <% for(var i=0;i<empdata.length;i++)
+                {%>
+                <option ><%=empdata[i].Fname %></option>
+                <%}%>
+            </select></td>
+            
+            <td><button type="submit">Submit</button></td>
+        </form>
+        </tr>
+    </table>
+</body>
+</html>
