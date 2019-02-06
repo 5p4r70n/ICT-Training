@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+</head>
+<body>
+    <form action="/insert" method="POST">
+    <center><h1><b>Welcome</b></h1></center>
+    <table>
+        <tr>
+            <td>Book ID</td>
+            <td><input type="text" name="bid" id="" value="Book Id" ></td>
+        </tr>
+        <tr>
+            <td>Book Name</td>
+            <td><input type="text" name="bname" id="" value="Book Name"></td>
+        </tr>
+        <tr>
+            <td>Auther</td>
+            <td><input type="text" value="Auther" name="auther" id=""></td>
+        </tr>
+    </table>
+    <button>insert</button><br>
+</form>
+<form action="/delete" method="POST">
+    <table><tr>
+<td><input type="text" name="delbid" id="" value="delete book id"></td>
+<td><button>Delete</button><br></td>
+</tr></table>
+</form>
+<button>update</button><br>
+<form action="/view" method="POST">
+    <input type="text" name="viwbook" id="" value="Book Name">
+    <button>view</button><br>
+</form>
+<form action="/edit" method="POST">
+    <input type="text" name="ebid" id="" value="ente book id">
+    <button>Edit</button><br>
+</form>
+<form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="samplefile"/>
+    <button type="submit">Upload</button><br>
+</form>
+
+</body>
+</html>
